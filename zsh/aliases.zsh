@@ -61,7 +61,7 @@ alias gitall='git add .'
 alias gitc='git commit -S'
 alias gitl='git log'
 alias gitun='git restore --staged'
-alias update_origin='git push origin main'
+alias gitp='git push'
 
 # Utils
 alias calc='bc'
@@ -82,3 +82,8 @@ alias parrot_live='curl ascii.live/parrot'
 alias show_private_key='gpg --export-secret-keys --armor'
 alias show_private_key_id='gpg --list-secret-keys --keyid-format LONG'
 alias show_public_key='gpg --export --armor'
+
+
+# Most accessed directories
+alias dotfiles='cd ~/dotfiles'
+alias config='cd ~/.config'
