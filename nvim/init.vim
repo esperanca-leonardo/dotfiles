@@ -50,6 +50,8 @@ set splitright       " Create the vertical splits to the right
 set splitbelow       " Create the horizontal splits below
 set autoread         " Update vim after file update from outside
 set mouse=a          " Enable mouse support
+set clipboard=unnamedplus " Enable copy and paste to external program 
+
 filetype on          " Detect and set the filetype option and trigger the 
                      " FileType Event
 filetype plugin on   " Load the plugin file for the file type, if any
