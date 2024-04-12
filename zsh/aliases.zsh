@@ -44,13 +44,19 @@ alias wifi_connect='nmcli dev wifi connect'
 alias temperature='curl https://wttr.in/\?format\=1'
 alias weather='curl https://wttr.in'
 
-# Yay
+# Yay / Pacman
+alias search='yay -Ss'
+alias list_package_information='yay -Qi'
+alias list_package_files='yay -Ql'
 alias instally='yes | yay -S'
 alias install='yay -S'
+alias list_installed_packages='pacman -Qe'
 alias upgradey=' yes | yay'
 alias upgrade='yay'
 alias upgrade_aur='yay -Sua'
-alias search='yay -Ss'
+alias list_packages_to_upgrade='yay -Qu'
+alias remove='yay -Rns'
+alias list_orphan_packages='pacman -Qtdq'
 alias remove_orphaned_packages='yay -Yc'
 alias system_health='yay -Ps'
 
@@ -60,8 +66,9 @@ alias gita='git add'
 alias gitall='git add .'
 alias gitc='git commit -S'
 alias gitl='git log'
-alias gitun='git restore --staged'
+alias gitu='git restore --staged'
 alias gitp='git push'
+alias gitd='git diff'
 
 # Utils
 alias calc='bc'
@@ -82,7 +89,6 @@ alias parrot_live='curl ascii.live/parrot'
 alias show_private_key='gpg --export-secret-keys --armor'
 alias show_private_key_id='gpg --list-secret-keys --keyid-format LONG'
 alias show_public_key='gpg --export --armor'
-
 
 # Most accessed directories
 alias dotfiles='cd ~/dotfiles'
