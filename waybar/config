@@ -48,9 +48,10 @@
         }
     },
     "memory": {
+        "tooltrip": false,
         "interval": 5,
-        "format": "󰍛 {}%",
-        "max-length": 10
+        "format": "󰍛  {used}GB | {avail}GB",
+        "max-length": 20,
     },
     "tray": {
         "spacing": 10
