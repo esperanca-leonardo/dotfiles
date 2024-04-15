@@ -7,26 +7,10 @@
         "custom/logo",
         "hyprland/workspaces"
     ],
-    "modules-center": [
-    ],
-    "modules-right": [
-        "tray",
-        "cpu",
-        "temperature",
-        "memory",
-        "network",
-        "pulseaudio",
-        "backlight",
-        "battery",
-        "clock"
-    ],
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
-        "icon-size": 25,
-        "tooltip-format": "{title}"
+    "custom/logo": {
+        "format": "  ",
+        "tooltip": false,
+        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
     },
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -49,10 +33,34 @@
             "1": []
         }
     },
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "cpu",
+        "temperature",
+        "memory",
+        "network",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "clock"
+    ],
+    "tray": {
+        "spacing": 10
+    },
     "cpu": {
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "format-icons": [
+            "▁", 
+            "▂", 
+            "▃", 
+            "▄", 
+            "▅", 
+            "▆", 
+            "▇", 
+            "█"
+        ],
 		    "tooltip": true,
-        "max-length	": 20,
+        "max-length": 20,
 		    "format": "{icon} {usage}%"
 	  },
     "temperature": {},
@@ -60,14 +68,17 @@
         "tooltrip": false,
         "interval": 5,
         "format": "󰍛  {used}GB | {avail}GB",
-        "max-length": 20,
-    },
-    "tray": {
-        "spacing": 10
+        "max-length": 20
     },
     "network": {
         "format-wifi" : "{icon} {ipaddr}/{cidr} on {essid}",
-        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+        "format-icons": [
+            "󰤯 ", 
+            "󰤟 ", 
+            "󰤢 ", 
+            "󰤥 ", 
+            "󰤨 "
+        ],
         "format-ethernet": "󰀂  {ipaddr}/{cidr}",
 	      "format-alt" : "󱛇 ",
         "format-disconnected" : "󰖪 ",
@@ -75,7 +86,7 @@
         "tooltip-format-ethernet": "Interface: {ifname}\nGateway: {gwaddr}\nNetmask: {netmask}\nDownload: {bandwidthDownBits} / {bandwidthDownBytes}\nUpload: {bandwidthUpBits} / {bandwidthUpBytes}",
 	      "tooltip-format-disconnected": "Disconnected",
 	      "interval": 5,
-	      "nospacing": 1,
+	      "nospacing": 1
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -84,27 +95,56 @@
         "format-muted": "󰝟 ",
         "format-icons": {
             "headphone": " ",
-            "default": ["󰖀", "󰕾 ", "  "]
+            "default": [
+                "󰖀",
+                "󰕾 ", 
+                "  "
+            ]
         },
         "scroll-step": 1,
         "interval": 5
     },
     "backlight": {
         "format": "{icon} {percent}% ",
-        "format-icons": ["󰛩 ", "󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "]
-    },
-    "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "format-icons": [
+            "󰛩 ", 
+            "󱩎 ", 
+            "󱩏 ", 
+            "󱩐 ", 
+            "󱩑 ", 
+            "󱩒 ", 
+            "󱩓 ", 
+            "󱩔 ", 
+            "󱩕 ", 
+            "󱩖 ", 
+            "󰛨 "
+        ]
     },
     "battery": {
         "format": "{icon} {capacity}%",
         "format-icons": {
-            "charging": ["󰢜 ", "󰂆 ", "󰂇 ", "󰂈 ", "󰢝 ", "󰂉 ", "󰢞 ", "󰂊 ", "󰂋 ",
+            "charging": [
+                "󰢜 ", 
+                "󰂆 ", 
+                "󰂇 ", 
+                "󰂈 ", 
+                "󰢝 ", 
+                "󰂉 ", 
+                "󰢞 ", 
+                "󰂊 ", 
+                "󰂋 ",
                 "󰂅 "
             ],
-            "default": ["󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", 
+            "default": [
+                "󰁺 ", 
+                "󰁻 ", 
+                "󰁼 ", 
+                "󰁽 ", 
+                "󰁾 ", 
+                "󰁿 ", 
+                "󰂀 ", 
+                "󰂁 ",
+                "󰂂 ", 
                 "󰁹 "
             ]
         },
@@ -120,6 +160,14 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         "format-alt": "  {:%a, %d %b %Y}",
         "format": "  {:%I:%M %p}"
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "on-click-right": "fullscreen",
+        "icon-theme": "WhiteSur",
+        "icon-size": 25,
+        "tooltip-format": "{title}"
     }
 }
 
