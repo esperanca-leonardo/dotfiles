@@ -8,14 +8,14 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
     ],
     "modules-right": [
         "tray",
         "memory",
         "network",
         "pulseaudio",
-        "battery"
+        "battery",
+        "clock"
     ],
     "wlr/taskbar": {
         "format": "{icon}",
@@ -54,11 +54,6 @@
     },
     "tray": {
         "spacing": 10
-    },
-    "clock": {
-        "tooltip-format": "<tt>{calendar}</tt>",
-        "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%I:%M %p}"
     },
     "network": {
         "format-wifi" : "{icon} {ipaddr}/{cidr} on {essid}",
@@ -106,6 +101,11 @@
             "critical": 10
         },
         "tooltip": false
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
     }
 }
 
