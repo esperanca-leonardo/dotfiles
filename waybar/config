@@ -11,6 +11,8 @@
     ],
     "modules-right": [
         "tray",
+        "cpu",
+        "temperature",
         "memory",
         "network",
         "pulseaudio",
@@ -47,6 +49,13 @@
             "1": []
         }
     },
+    "cpu": {
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+		    "tooltip": true,
+        "max-length	": 20,
+		    "format": "{icon} {usage}%"
+	  },
+    "temperature": {},
     "memory": {
         "tooltrip": false,
         "interval": 5,
