@@ -70,6 +70,7 @@ alias gitl='git log'
 alias gitu='git restore --staged'
 alias gitp='git push'
 alias gitd='git diff'
+alias gitr='git restore'
 
 # Utils
 alias calc='bc'
