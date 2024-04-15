@@ -75,17 +75,16 @@
 	"nospacing": 1,
     },
     "pulseaudio": {
-        "format": "{icon}",
-        "format-bluetooth": "󰂰",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰 ",
         "nospacing": 1,
-        "tooltip-format": "Volume : {volume}%",
-        "format-muted": "󰝟",
+        "format-muted": "󰝟 ",
         "format-icons": {
-            "headphone": "",
-            "default": ["󰖀","󰕾",""]
+            "headphone": " ",
+            "default": ["󰖀", "󰕾 ", "  "]
         },
-        "on-click": "pamixer -t",
-        "scroll-step": 1
+        "scroll-step": 1,
+        "interval": 5
     },
     "custom/logo": {
         "format": "  ",
