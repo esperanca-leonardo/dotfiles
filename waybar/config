@@ -91,34 +91,16 @@
         "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
     },
     "battery": {
-        "format": "{capacity}% {icon}",
+        "format": "{icon} {capacity}%",
         "format-icons": {
-            "charging": [
-                "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
+            "charging": ["󰢜 ", "󰂆 ", "󰂇 ", "󰂈 ", "󰢝 ", "󰂉 ", "󰢞 ", "󰂊 ", "󰂋 ",
+                "󰂅 "
             ],
-            "default": [
-                "󰁺",
-                "󰁻",
-                "󰁼",
-                "󰁽",
-                "󰁾",
-                "󰁿",
-                "󰂀",
-                "󰂁",
-                "󰂂",
-                "󰁹"
+            "default": ["󰁺 ", "󰁻 ", "󰁼 ", "󰁽 ", "󰁾 ", "󰁿 ", "󰂀 ", "󰂁 ", "󰂂 ", 
+                "󰁹 "
             ]
         },
-        "format-full": "Charged ",
+        "format-full": " Charged",
         "interval": 5,
         "states": {
             "warning": 20,
