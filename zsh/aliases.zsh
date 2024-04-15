@@ -31,6 +31,7 @@ alias pfetch='clear && pfetch'
 # Network
 alias local_ip="ip addr show | grep 'inet ' | grep -v '127.0.0.1' | awk '{print \$2}'"
 alias public_ip="wget -qO- https://ipinfo.io/ip | awk '{print $1}'"
+alias internet_test='ping google.com'
 
 # Nmap
 alias list_hosts='sudo nmap -sn'
@@ -46,8 +47,8 @@ alias weather='curl https://wttr.in'
 
 # Yay / Pacman
 alias search='yay -Ss'
-alias list_package_information='yay -Qi'
-alias list_package_files='yay -Ql'
+alias package_information='yay -Qi'
+alias package_files='yay -Ql'
 alias instally='yes | yay -S'
 alias install='yay -S'
 alias list_installed_packages='pacman -Qe'
