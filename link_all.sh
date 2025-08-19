@@ -70,7 +70,7 @@ link_one "hyprland/hyprland.conf"    "${HOME}/.config/hypr/hyprland.conf"
 link_one "hyprland/hyprpaper.conf"   "${HOME}/.config/hypr/hyprpaper.conf"
 
 # neovim
-link_one "nvim/init.vim"             "${HOME}/.config/nvim/init.vim"
+link_one "nvim/init.lua"             "${HOME}/.config/nvim/init.lua"
 
 # powerlevel10k
 link_one "powerlevel10k/.p10k.zsh"   "${HOME}/.p10k.zsh"
