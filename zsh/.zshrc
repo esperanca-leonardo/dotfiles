@@ -1,3 +1,5 @@
+pokemon-colorscripts -r
+
 ############################################
 # 0) Speed-up: Powerlevel10k instant prompt
 # Keep this at the very top.
@@ -45,6 +47,16 @@ source "$ZSH/oh-my-zsh.sh"
 ############################################
 # tldr pages in Brazilian Portuguese
 export TLDR_LANGUAGE=pt_BR
+
+# necessario para rodar o black_hole
+export PATH=$HOME/vcpkg:$PATH
+
+# Snapshot com Timeshift 
+tsnap() {
+  local msg="${*:-manual}"
+  sudo timeshift --create --comments "$msg $(date +'%F %T')" --tags O
+  sudo timeshift --list | sed -n '1,20p'
+}
 
 # Powerlevel10k config (run `p10k configure` to regenerate)
 [[ -f "$HOME/.p10k.zsh" ]] && source "$HOME/.p10k.zsh"
